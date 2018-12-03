@@ -75,7 +75,7 @@ module.exports = __webpack_require__(2);
 /* 1 */
 /***/ (function(module, exports) {
 
-console.log('Hello World!');
+
 
 /***/ }),
 /* 2 */

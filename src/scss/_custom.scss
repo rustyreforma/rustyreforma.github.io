@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: row;
+    .logo {
+        width: 40%;
+        padding: 20px;
+        -webkit-box-shadow: 1px 0px 21px 1px rgba(201,201,201,1);
+        -moz-box-shadow: 1px 0px 21px 1px rgba(201,201,201,1);
+        box-shadow: 1px 0px 21px 1px rgba(201,201,201,1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        h1 {
+            font-family: $font-lora;
+            font-size: 10vh;
+            /* background gradient*/
+            background: linear-gradient(to right, #565656 30%, #000 40%, #565656 60%, #565656 80%);
+            background-size: 200% auto;
+            color: #000;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* super fast animation!!! */
+            animation: rusty 0.05s linear infinite;
+            @keyframes rusty {
+                to {
+                background-position: 100% center;
+                }
+            }
+
+        }
+    }
+    .content {
+        width: 60%;
+        padding: 20px;
+
+        nav {
+            ul {
+                text-align: right;
+                li {
+                    display: inline-block;
+                    padding: 0 20px;
+                    font-size: 24px;
+                    a {
+                        color: #333;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
