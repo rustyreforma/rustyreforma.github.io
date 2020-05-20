@@ -1,6 +1,14 @@
 header {
     background-color: #0D195A;
 
+    img {
+        max-width: 200px;
+
+        @screen md {
+            max-width: auto;
+        }
+    }
+
     ul {
         li {
             a {

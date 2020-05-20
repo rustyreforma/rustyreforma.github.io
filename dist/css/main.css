@@ -814,6 +814,16 @@ header {
   background-color: #0D195A;
 }
 
+header img {
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+  header img {
+    max-width: auto;
+  }
+}
+
 header ul li a {
   font-weight: 400;
   font-size: 18px;
