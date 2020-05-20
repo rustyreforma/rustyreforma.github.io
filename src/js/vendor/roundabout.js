@@ -50,9 +50,8 @@
     minScale: 0.8,
     childSelector:"li",
     autoplay: false,
-    autoplayDuration: 2000,
+    autoplayDuration: 100000,
     autoplayPauseOnHover:true,
-    tilt: 0.4
   });
 
 }(jQuery));

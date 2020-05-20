@@ -11415,9 +11415,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     minScale: 0.8,
     childSelector: "li",
     autoplay: false,
-    autoplayDuration: 2000,
-    autoplayPauseOnHover: true,
-    tilt: 0.4
+    autoplayDuration: 100000,
+    autoplayPauseOnHover: true
   });
 })(jQuery);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))

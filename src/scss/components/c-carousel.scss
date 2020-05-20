@@ -1,0 +1,142 @@
+.c-carousel {
+    .container {
+        h2 {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            color: #000000;
+    
+            padding-top: 40px;
+    
+            position: relative;
+            max-width: 445px;
+            margin: 0 auto 40px;
+    
+            &:before {
+                background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #A9DC3D 100.01%);
+                border-radius: 10px;
+    
+                content: '';
+                width: 80px;
+                height: 16px;
+    
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        ul {
+            height: 358px;
+            margin-top: -30px;
+            margin-bottom: 80px;
+            @screen md {
+                margin-top: -70px;
+                margin-bottom: 110px;
+            }
+            li {
+                background: #FFFFFF;
+                box-shadow: 0px 2px 16px rgba(209, 216, 255, 0.5);
+                border-radius: 16px;
+                position: relative;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: row;
+
+
+                padding: 30px 30px 40px;
+
+                max-width: 814px;
+                height: 358px!important;
+                transform: scale(0.8);
+
+                transition: transform 0.3s ease;
+
+                @screen md {
+                    padding: 73px 50px 86px 40px
+                }
+
+                &.roundabout-in-focus {
+                    transform: scale(1);
+                    transition: transform 0.3s ease;
+                }
+                figure {
+                    flex-basis: 100%;
+                    @screen md {
+                        flex-basis: 30%;
+                        max-width: 150px;
+                    }
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        object-fit: contain;
+
+                        margin: 0 auto;
+
+                        @screen md {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                
+                div {
+                    flex-basis: 100%;
+                    @screen md {
+                        flex-basis: 70%;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 140%;
+                        color: #000000;
+                        margin-bottom: 20px;
+
+                        @screen md {
+                            font-size: 24px;
+                            margin-bottom: 40px;
+                        }
+                    }
+                    h4 {
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 140%;
+                        letter-spacing: 0.16em;
+                        color: #000000;
+                        @screen md {
+                            font-size: 24px;
+                            line-height: 140%;
+                        }
+                    }
+                    span {
+                        display: block;
+                        font-size: 12px;
+                        line-height: 140%;
+                        color: #000000;
+                        @screen md {
+                            font-size: 16px;
+                            line-height: 140%;
+                        }
+                    }                    
+                }
+                &:after {
+                    content: '';
+
+                    width: 90px;
+                    height: 71px;
+
+                    background-image: url(../images/apostrophe.svg);
+                    background-size: contain;
+
+                    bottom: 44px;
+                    right: 44px;
+                    position: absolute;
+
+                }
+            }
+        }
+    }
+}
