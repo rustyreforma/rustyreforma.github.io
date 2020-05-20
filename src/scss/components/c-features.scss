@@ -1,0 +1,128 @@
+.c-features {
+    overflow: hidden;
+    position: relative;
+    &:before,
+    &:after {
+        content: '';
+
+        background-image: url(../images/dots-pattern.svg);
+
+        width: 150px;
+        height: 150px;
+
+        position: absolute;
+
+        display: none;
+
+        @screen lg {
+            display: block;
+        }
+    }
+
+    &:before {
+        left: -80px;
+        bottom: 25%;
+    }
+    &:after {
+        top: 15%;
+        right: -80px;
+    }
+    h2 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: #000000;
+
+        padding-top: 40px;
+
+        position: relative;
+        max-width: 445px;
+        margin: 0 auto 40px;
+
+        &:before {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #0000FF 100.01%);
+            border-radius: 10px;
+
+            content: '';
+            width: 80px;
+            height: 16px;
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__wrapper {
+        max-width: 940px;
+
+        h4 {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #3CC3CC;
+
+            margin-bottom: 50px;
+        }
+        > div {
+            > div {
+                padding: 38px 50px 30px;
+                max-width: 470px;
+                margin: 0 auto;
+
+                &:first-child {
+                    padding: 38px 50px 0px;
+                    @screen lg {
+                        padding: 38px 50px 30px;
+                    }
+                }
+            }
+            &.checked {
+
+                > div {
+                    background: #FFFFFF;
+                    box-shadow: 0px 30px 64px rgba(0, 0, 0, 0.11);
+                    border-radius: 24px;
+                }
+
+                ul {
+                    li {
+                        font-weight: bold;
+                        display: flex;
+    
+                        &:before {
+                            content: '';
+    
+                            display: inline-block;
+                            min-width: 23px;
+                            height: 18px;
+    
+                            margin-right: 22px;
+    
+                            position: relative;
+                            top: 6px;
+    
+                            background-image: url(../images/icon-check.svg);
+                        }
+                    }
+                }
+            }
+        }
+        ul {
+            li {
+                min-height: 62px;
+                max-width: 332px;
+                margin: 20px 0;
+
+                font-size: 22px;
+                line-height: 140%;
+                color: #565F85;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

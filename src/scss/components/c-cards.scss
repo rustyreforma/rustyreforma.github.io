@@ -1,0 +1,133 @@
+.c-cards {
+    background-color: #F3F4F7;
+
+    h3 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: #040920;
+
+        margin-bottom: 25px;
+        padding-top: 40px;
+        
+        position: relative;
+
+        &:before {
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #0000FF 100.01%);
+            border-radius: 10px;
+
+            content: '';
+            width: 80px;
+            height: 16px;
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 140%;
+        text-align: center;
+        color: #565F85;
+
+        padding-bottom: 30px;
+        margin: 0 auto;
+        max-width: 622px;
+
+        @screen lg {
+            padding-bottom: 60px;
+        } 
+    }
+
+    &--three {
+        @extend .c-cards;
+        background-color: #0A0F28;
+
+        .container {
+            h3 {
+                color: #fff;
+                &:before {
+                    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100.01%);
+                }
+                
+            }
+            > p {
+                max-width: 779px;
+                margin: 0 auto;
+                color: #fff;
+                padding-bottom: 108px;
+                color: #fff;
+            }
+        }
+
+        .card {
+            > div {
+                background: rgba(255, 255, 255, 0.06);
+                border: 1px solid rgba(255, 255, 255, 0.24);
+                box-sizing: border-box;
+                border-radius: 16px;
+                height: 100%;
+
+                padding: 88px 27px 26px;
+
+                position: relative;
+
+                figure {
+                    position: absolute;
+                    top: -49px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                h6 {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-bottom: 31px;
+                }
+                p {
+                    text-align: left;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 140%;
+                    color: #A8ADC1;
+                    
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    &--six {
+        @extend .c-cards;
+
+        .card {
+            > div {
+                padding: 60px 32px 32px;
+                background-color: #fff;
+                border-radius: 16px;
+
+                height: 100%;
+                
+                h6 {
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #000000;
+
+                    margin-top: 20px;
+                    
+                    min-height: 66px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

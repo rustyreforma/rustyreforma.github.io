@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind utilities;
+
+@import 'settings/_fonts.scss';
+@import 'settings/_variables.scss';
+
+// Defaults
+@import 'settings/_defaults.scss';
+
+// Components
+@import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/c-banner.scss';
+@import 'components/c-cards.scss';
+@import 'components/c-features.scss';
+@import 'components/c-carousel.scss';

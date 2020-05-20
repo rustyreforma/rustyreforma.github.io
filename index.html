@@ -3,28 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio | Rusty Reforma</title>
-    <link href="https://unpkg.com/ionicons@4.4.8/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/app.css">
+    <title>Optimal Financial Systems</title>
+    <link rel="stylesheet" href="dist/css/main.css">
 </head>
-<body>
-    <section class="logo">
-        <h1>Rusty<br/>Reforma.</h1>
-        <div class="social">
-            <a href="#"><i class="icon ion-logo-facebook"></i></a>
-            <a href="#"><i class="icon ion-logo-linkedin"></i></a>
-            <a href="#"><i class="icon ion-md-mail"></i></a>
+<style>
+    #carousel {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    #carousel li 
+    {
+        background: green;
+        width: 200px;
+    }
+</style>
+<body>   
+    <header>
+        <div class="container max-w-screen-xl mx-auto px-0 xl:px-10 py-0 xl:py-5">
+            <div class="flex flex-col lg:flex-row justify-between relative">
+                <div class="w-full xl:w-auto lg:w-1/3 px-4 py-4 xl:py-0 xl:px-0 ">
+                    <img src="src/images/logo.svg" alt="">
+                </div>
+                <div class="header-navigation w-full lg:w-2/3 self-center flex flex-col lg:flex-row h-0 overflow-hidden lg:h-auto justify-end items-center px-4 xl:pr-0">
+                    <ul class="flex justify-end flex-col lg:flex-row w-full xl:w-auto">
+                        <li><a class="py-1 lg:py-0 lg:px-2" href="#">Solutions</a></li>
+                        <li><a class="py-1 lg:py-0 lg:px-2" href="#">How It Works</a></li>
+                        <li><a class="py-1 lg:py-0 lg:px-2" href="#">Who We Help</a></li>
+                        <li><a class="py-1 lg:py-0 lg:px-2" href="#">Why OFS</a></li>
+                        <li><a class="py-1 lg:py-0 lg:px-2" href="#">Pricing</a></li>
+                        <li><a class="py-1 lg:py-0 lg:px-2" href="#">About Us</a></li>
+                        <li><a class="py-1 lg:py-0 lg:px-2" href="#">News</a></li>
+                    </ul>
+                    <a class="button w-full lg:w-auto text-center my-4 lg:my-0 lg:ml-4" href="">Login</a>
+
+                    <div class="burger absolute lg:hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section class="c-carousel">
+        <div class="container">
+            <ul id="carousel" class="top_slider roundabout-holder">
+                <li>
+                    <figure>
+                        <img src="dist/images/person-tom.png" alt="">
+                    </figure>
+                    <div>
+                        <p>OFS has allowed us to stay focused on developing new projects and maximizing returns for our investors.</p>
+                        <h4>TOM FINNICAN</h4>
+                        <span>Partner, Patoma</span>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="dist/images/person-tom.png" alt="">
+                    </figure>
+                    <div>
+                        <p>OFS has allowed us to stay focused on developing new projects and maximizing returns for our investors.</p>
+                        <h4>TOM FINNICAN</h4>
+                        <span>Partner, Patoma</span>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="dist/images/person-tom.png" alt="">
+                    </figure>
+                    <div>
+                        <p>OFS has allowed us to stay focused on developing new projects and maximizing returns for our investors.</p>
+                        <h4>TOM FINNICAN</h4>
+                        <span>Partner, Patoma</span>
+                    </div>
+                </li>
+                <li>
+                    <figure>
+                        <img src="dist/images/person-tom.png" alt="">
+                    </figure>
+                    <div>
+                        <p>OFS has allowed us to stay focused on developing new projects and maximizing returns for our investors.</p>
+                        <h4>TOM FINNICAN</h4>
+                        <span>Partner, Patoma</span>
+                    </div>
+                </li>
+            </ul>  
+        </div>
+    </section> -->
+
+    <section class="c-banner">
+        <div class="container container max-w-screen-xl mx-auto pt-16 pb-20 px-5 xl:px-20 xl:pt-24 xl:pb-32">
+            <h1 class="pb-2">Get Answers Faster.</h1>
+            <p class="pb-3">Optimal Financial Systems (OFS) helps growing companies transform their financial operations by providing agile technology and first-hand expertise. We provide cloud-based software solutions that help integrate financial & operational systems, automate tedious processes, and give powerful business insights to executives.</p>
+            <a class="button" href="">CONTACT US</a>
         </div>
     </section>
-    <section class="content">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <section class="c-features">
+        <div class="container container max-w-screen-xl mx-auto pb-10 xl:pb-16 pt-8 xl:pt-10 xl:px-10">
+            <h2>Your business<br/> is growing in size & complexity​</h2>
+            <div class="c-features__wrapper mx-auto flex flex-col lg:flex-row">
+                <div class="w-full lg:w-1/2">
+                    <div>
+                        <h4>You have​</h4>
+                        <ul>
+                            <li>more transactions​</li>
+                            <li>more manual data entry​</li>
+                            <li>more customers</li>
+                            <li>more employees</li>
+                            <li>more vendors</li>
+                            <li>more software systems</li>
+                            <li>more stakeholders​​</li>
+                            <li>more decisions​​</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 checked">
+                    <div>
+                        <h4>You Need</h4>
+                        <ul>
+                            <li>standardized recordkeeping</li>
+                            <li>outsourced bookkeeping & back-office support</li>
+                            <li>automated invoicing and collections</li>
+                            <li>time /expense tracking & payroll administration</li>
+                            <li>streamlined payment approvals & disbursements</li>
+                            <li>integrated, real-time financial data & KPI’s</li>
+                            <li>customizable reporting</li>
+                            <li>answers faster</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="c-cards--three">
+        <div class="container max-w-screen-xl mx-auto px-0 pb-6 xl:pb-10 pt-8 xl:pt-10 xl:px-10">
+            <h3>Key Principles</h3>
+            <p class="px-4">OFS provides solutions rooted in the key principles of digital transformation that enable growth for new and established businesses alike:</p>
+
+            <div class="flex flex-col md:flex-row flex-wrap xl:-mx-2">
+                <div class="card w-full lg:w-1/3 text-center px-4 lg:px-2 pb-16 xl:pb-8">
+                    <div>
+                        <figure>
+                            <img class="mx-auto" src="src/images/orchestration.svg" alt="">
+                        </figure>
+                        <h6>Orchestration</h6>
+                        <p>Centralized management of the whole system</p>
+                    </div>
+                </div>
+                <div class="card w-full lg:w-1/3 text-center px-4 lg:px-2 pb-16 xl:pb-8">
+                    <div>
+                        <figure>
+                            <img class="mx-auto" src="src/images/integration.svg" alt="">
+                        </figure>
+                        <h6>Integration</h6>
+                        <p>Interconnected business processes that can provide data to one another​</p>
+                    </div>
+                </div>
+                <div class="card w-full lg:w-1/3 text-center px-4 lg:px-2 pb-16 xl:pb-8">
+                    <div>
+                        <figure>
+                            <img class="mx-auto" src="src/images/execution.svg" alt="">
+                        </figure>
+                        <h6>Automated Execution</h6>
+                        <p>Reduction of the budget, operating time, and human intervention to a minimum level</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="c-cards--six">
+        <div class="container max-w-screen-xl mx-auto px-0 pb-6 xl:pb-10 pt-8 xl:pt-10 xl:px-10">
+            <h3>Why OFS</h3>
+            <p class="px-4">OFS enables your business to move and grow faster by improving efficiency and arming you with the data & analytics to make decisions confidently</p>
+
+            <div class="flex flex-col md:flex-row flex-wrap xl:-mx-4">
+                <div class="card w-full md:w-1/2 lg:w-1/3 text-center px-4 pb-8">
+                    <div>
+                        <figure>
+                        <img class="mx-auto" src="src/images/analytics.svg" alt="">
+                        </figure>
+                        <h6>Real-time Business Analytics</h6>
+                    </div>
+                </div>
+                <div class="card w-full md:w-1/2 lg:w-1/3 text-center px-4 pb-8">
+                    <div>
+                        <figure>
+                        <img class="mx-auto" src="src/images/feature.svg" alt="">
+                        </figure>
+                        <h6>Fully-customised Solutions</h6>
+                    </div>
+                </div>
+                <div class="card w-full md:w-1/2 lg:w-1/3 text-center px-4 pb-8">
+                    <div>
+                        <figure>
+                        <img class="mx-auto" src="src/images/report.svg" alt="">
+                        </figure>
+                        <h6>Accounting processes designed to facilitate year-round tax planning and optimization of ongoing strategies</h6>
+                    </div>
+                </div>
+                <div class="card w-full md:w-1/2 lg:w-1/3 text-center px-4 pb-8">
+                    <div>
+                        <figure>
+                        <img class="mx-auto" src="src/images/time.svg" alt="">
+                        </figure>
+                        <h6>Centrally-managed cash collection and disbursement workflows with detailed audit trails accessible 24/7</h6>
+                    </div>
+                </div>
+                <div class="card w-full md:w-1/2 lg:w-1/3 text-center px-4 pb-8">
+                    <div>
+                        <figure>
+                        <img class="mx-auto" src="src/images/scales.svg" alt="">
+                        </figure>
+                        <h6>Automated publishing and distribution of internal and external stakeholder reporting</h6>
+                    </div>
+                </div>
+                <div class="card w-full md:w-1/2 lg:w-1/3 text-center px-4 pb-8">
+                    <div>
+                        <figure>
+                        <img class="mx-auto" src="src/images/cloud-computing.svg" alt="">
+                        </figure>
+                        <h6>Extensible cloud solutions that can be integrated with existing IT infrastructure</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="c-banner--type2">
+        <div class="container container max-w-screen-xl mx-auto py-20 px-5 xl:px-20 flex flex-col items-center">
+            <h3 class="text-center">Tell Us About Your Company</h3>
+            <p>Send us some basic information so that we can get to know you better, and we will set up a one-on-one phone consultation.</p>
+            <a href="#" class="button">GET STARTED</a>
+        </div>
+    </section>
+    <footer>
+        <div class="logo-wrapper container max-w-screen-xl mx-auto px-5 xl:px-10 flex flex-col xl:flex-row justify-center">
+            <a class="m-0" href="#"><img src="dist/images/footer-logo.svg" alt=""></a>
+            <!-- <ul class="mb-2 xl:mb-0">
+                <li><a href="#">What We Do</a></li>
+                <li><a href="#">Who We Help</a></li>
+                <li><a href="#">Why OFS</a></li>
+            </ul>
+            <ul class="mb-2 xl:mb-0">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+            <ul class="mb-2 xl:mb-0">
+                <li><a href="#">Client Portal</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul> -->
+        </div>
+        <div class="container max-w-screen-xl mx-auto">
+            <p class="w-full text-center px-5 xl:px-0">Optimal Friction Systems © 2020. All Rights Reserved. Privacy Policy, Terms and Conditions</p>
+        </div>
+    </footer>
 </body>
+    <script src="dist/js/main.js"></script>
 </html>
