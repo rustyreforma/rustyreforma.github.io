@@ -820,7 +820,7 @@ header img {
 
 @media (min-width: 768px) {
   header img {
-    max-width: auto;
+    max-width: 100%;
   }
 }
 
